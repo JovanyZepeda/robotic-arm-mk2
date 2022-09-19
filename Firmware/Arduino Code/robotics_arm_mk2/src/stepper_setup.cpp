@@ -1,20 +1,7 @@
 #include <stepper_setup.h>
 #include <AccelStepper.h>
 
-#define XSTEP 2 //Stepper Motor Step pin
-#define YSTEP 3
-#define ZSTEP 4
-#define XDIR 5 // Stepper motor Direction control pin
-#define YDIR 6
-#define ZDIR 7
-#define ENABLE 8 // CNC Shield Enable Pin
-#define XLIMIT 9 // Limit switch pins
-#define YLIMIT 10
-#define ZLIMIT 11
-#define XMOTORACC 250 // Acceleration and Max Speed values
-#define XMOTORMAXSPEED 1000
-#define YMOTORACC 250
-#define YMOTORMAXSPEED 1000
+
 
 AccelStepper XMOTOR(1,XSTEP,XDIR);
 AccelStepper YMOTOR(1,YSTEP,YDIR);
